@@ -1,0 +1,23 @@
+.homePage {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url("/bg-image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  place-items: center;
+
+  .box {
+    max-width: 900px;
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+
+    .title {
+      color: var(--base-white);
+    }
+  }
+}
