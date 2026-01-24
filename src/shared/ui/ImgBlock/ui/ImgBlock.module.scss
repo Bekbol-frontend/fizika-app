@@ -1,0 +1,14 @@
+.imgBlock {
+  display: flex;
+  padding: var(--space-xs) !important;
+  background-color: var(--base-white);
+  border-radius: var(--rounded-xs);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--rounded-xs);
+  }
+}

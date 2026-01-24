@@ -1,5 +1,5 @@
-import Img1 from "@/shared/assets/masala-echish.png";
-import Img2 from "@/shared/assets/mustaqil-echish.png";
+import Img1 from "@/shared/assets/blockCard/masala-echish.png";
+import Img2 from "@/shared/assets/blockCard/mustaqil-echish.png";
 import styles from "./CardBlock.module.scss";
 import { Section } from "../../Section";
 
