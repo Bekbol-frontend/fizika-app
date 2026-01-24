@@ -6,8 +6,7 @@ import { Section } from "../../Section";
 import { Button, Card, Col, Row, Typography } from "antd";
 import { useResponsive } from "@/shared/lib/hooks/useResponsive";
 import { useNavigate } from "react-router-dom";
-import { CloseOutlined } from "@ant-design/icons";
-import { appRoutes } from "@/shared/config/routeConfig";
+import { BtnToHome } from "../../BtnToHome";
 
 const { Title } = Typography;
 
@@ -28,12 +27,7 @@ function CardBlock(props: IProps) {
 
   return (
     <Section className={styles.section}>
-      <Button
-        icon={<CloseOutlined />}
-        type="primary"
-        className={styles.btnClose}
-        onClick={() => navigate(appRoutes.home)}
-      />
+      <BtnToHome />
       <div className={styles.inner}>
         <Title level={sm ? 1 : 3}>{mainTitle}</Title>
 
