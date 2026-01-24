@@ -44,7 +44,13 @@ function CardBlock(props: IProps) {
               cover={<img draggable={false} alt={titleOne} src={Img1} />}
             >
               <Title level={sm ? 4 : 5}>{titleOne}</Title>
-              <Button onClick={() => navigate(pageOne)}>Kirish</Button>
+              <Button
+                onClick={() => navigate(pageOne)}
+                type="primary"
+                className={styles.cardBtn}
+              >
+                Kirish
+              </Button>
             </Card>
           </Col>
           <Col span={sm ? 12 : 24}>
@@ -53,7 +59,13 @@ function CardBlock(props: IProps) {
               cover={<img draggable={false} alt={titleTwo} src={Img2} />}
             >
               <Title level={sm ? 4 : 5}>{titleTwo}</Title>
-              <Button onClick={() => navigate(pageTwo)}>Kirish</Button>
+              <Button
+                onClick={() => navigate(pageTwo)}
+                type="primary"
+                className={styles.cardBtn}
+              >
+                Kirish
+              </Button>
             </Card>
           </Col>
         </Row>
