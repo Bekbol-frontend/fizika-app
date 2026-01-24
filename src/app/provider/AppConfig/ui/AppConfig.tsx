@@ -11,11 +11,14 @@ function AppConfig({ children }: IProps) {
       theme={{
         token: {
           fontFamily: "var(--font-roboto)",
-          fontSize: 17,
+          fontSize: 16,
         },
         components: {
           Button: {
             controlHeight: 38,
+          },
+          Result: {
+            titleFontSize: 20,
           },
         },
       }}

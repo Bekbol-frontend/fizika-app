@@ -8,10 +8,10 @@ import { AppConfig } from "./app/provider/AppConfig";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
-    <ErrorBoundary>
-      <AppConfig>
+    <AppConfig>
+      <ErrorBoundary>
         <App />
-      </AppConfig>
-    </ErrorBoundary>
+      </ErrorBoundary>
+    </AppConfig>
   </BrowserRouter>,
 );

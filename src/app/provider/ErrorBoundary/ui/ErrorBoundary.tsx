@@ -1,3 +1,4 @@
+import { PageError } from "@/shared/ui/PageError";
 import React, { type ErrorInfo, type ReactNode } from "react";
 
 interface IProps {
@@ -28,7 +29,7 @@ export default class ErrorBoundary extends React.Component<IProps, IState> {
     const { hasError } = this.state;
 
     if (hasError) {
-      return <h1>Something went wrong.</h1>;
+      return <PageError />;
     }
 
     return children;
