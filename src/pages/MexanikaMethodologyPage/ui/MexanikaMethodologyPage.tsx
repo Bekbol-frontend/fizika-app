@@ -10,7 +10,7 @@ import {
   QuestionCircleOutlined,
 } from "@ant-design/icons";
 import { useResponsive } from "@/shared/lib/hooks/useResponsive";
-import { BtnToHome } from "@/shared/ui/BtnToHome";
+import { BtnToBack } from "@/shared/ui/BtnToBack";
 
 const { Title } = Typography;
 
@@ -19,7 +19,7 @@ function MexanikaMethodologyPage() {
 
   return (
     <Section className={styles.seciont}>
-      <BtnToHome />
+      <BtnToBack />
       <div className={styles.inner}>
         <Title level={sm ? 1 : 3}>Duradgorlik</Title>
         <Row gutter={[16, 16]}>

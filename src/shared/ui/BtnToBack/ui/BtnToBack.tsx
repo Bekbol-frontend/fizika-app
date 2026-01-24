@@ -1,6 +1,6 @@
 import { CloseOutlined } from "@ant-design/icons";
 import { Button } from "antd";
-import styles from "./BtnToHome.module.scss";
+import styles from "./BtnToBack.module.scss";
 import { useNavigate } from "react-router-dom";
 
 function BtnToHome() {
@@ -10,7 +10,7 @@ function BtnToHome() {
     <Button
       icon={<CloseOutlined />}
       type="primary"
-      className={styles.btnToHome}
+      className={styles.btnToBack}
       onClick={() => navigate(-1)}
     />
   );

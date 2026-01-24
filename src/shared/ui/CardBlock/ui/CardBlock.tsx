@@ -6,7 +6,7 @@ import { Section } from "../../Section";
 import { Button, Card, Col, Row, Typography } from "antd";
 import { useResponsive } from "@/shared/lib/hooks/useResponsive";
 import { useNavigate } from "react-router-dom";
-import { BtnToHome } from "../../BtnToHome";
+import { BtnToBack } from "../../BtnToBack";
 
 const { Title } = Typography;
 
@@ -27,7 +27,7 @@ function CardBlock(props: IProps) {
 
   return (
     <Section className={styles.section}>
-      <BtnToHome />
+      <BtnToBack />
       <div className={styles.inner}>
         <Title level={sm ? 1 : 3}>{mainTitle}</Title>
 
