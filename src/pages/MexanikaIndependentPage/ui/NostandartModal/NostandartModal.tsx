@@ -1,3 +1,5 @@
+import { useResponsive } from "@/shared/lib/hooks/useResponsive";
+import { useStyleTable } from "@/shared/lib/hooks/useStylesTable";
 import { Modal, Table } from "antd";
 import type { TableProps } from "antd";
 
@@ -18,6 +20,7 @@ const columns: TableProps<DataType>["columns"] = [
     title: "Savol (Muammo)",
     dataIndex: "question",
     key: "question",
+    width: 300,
   },
   {
     title: "Javob",
@@ -28,6 +31,7 @@ const columns: TableProps<DataType>["columns"] = [
     title: "Aniq va mantiqiy tushuntirish",
     dataIndex: "desc",
     key: "desc",
+    width: 300,
   },
 ];
 
@@ -75,6 +79,9 @@ interface IProps {
 }
 
 function NostandartModal({ isModalOpen, handleCancel }: IProps) {
+  const { styles } = useStyleTable();
+  const { sm } = useResponsive();
+
   return (
     <Modal
       title="Nostandart masalalar"
@@ -90,7 +97,13 @@ function NostandartModal({ isModalOpen, handleCancel }: IProps) {
         xxl: "40%",
       }}
     >
-      <Table<DataType> columns={columns} dataSource={data} pagination={false} />
+      <Table<DataType>
+        columns={columns}
+        dataSource={data}
+        pagination={false}
+        className={styles.customTable}
+        scroll={{ x: sm ? "100%" : "max-content" }}
+      />
     </Modal>
   );
 }
