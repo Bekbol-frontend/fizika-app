@@ -8,7 +8,7 @@ function MexanikaPage() {
       titleOne="Masala echish metodikasi"
       titleTwo="Mustaqil echish uchin masalalar"
       pageOne={appRoutes.mexanikaMethodology}
-      pageTwo="/aaa"
+      pageTwo={appRoutes.mexanikaIndependent}
     />
   );
 }

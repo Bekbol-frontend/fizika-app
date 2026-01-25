@@ -4,6 +4,7 @@ import { HomePageAsync } from "@/pages/HomePage";
 import { appRoutes } from "@/shared/config/routeConfig";
 import { MexanikaPageAsync } from "@/pages/MexanikaPage";
 import { MexanikaMethodologyPageAsync } from "@/pages/MexanikaMethodologyPage";
+import { MexanikaIndependentPageAsync } from "@/pages/MexanikaIndependentPage";
 
 function AppRoutes() {
   return (
@@ -14,6 +15,10 @@ function AppRoutes() {
         <Route
           path={appRoutes.mexanikaMethodology}
           element={<MexanikaMethodologyPageAsync />}
+        />
+        <Route
+          path={appRoutes.mexanikaIndependent}
+          element={<MexanikaIndependentPageAsync />}
         />
       </Route>
     </Routes>
