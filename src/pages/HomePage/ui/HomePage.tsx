@@ -13,7 +13,7 @@ function HomePage() {
     <Section className={styles.homePage}>
       <div className={styles.box}>
         <Title className={styles.title} level={sm ? 1 : 4}>
-          Umumkasbiy va ixtisoslik fanlar integratsiyasi
+          Fizika fonidan nostandart masalalar yechish metodikasi
         </Title>
 
         <HomeMenu />
