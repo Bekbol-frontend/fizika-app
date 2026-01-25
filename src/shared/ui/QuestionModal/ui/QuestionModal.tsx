@@ -1,16 +1,17 @@
 import { Modal, Card, Radio, Button, Typography } from "antd";
 import { useState } from "react";
-import { questions } from "./testItems";
+import type { IQuestion } from "../types";
 
 const { Title } = Typography;
 
 interface IProps {
   isModalOpen: boolean;
   handleCancel: () => void;
+  questions: IQuestion[];
 }
 
-function TestModal(props: IProps) {
-  const { handleCancel, isModalOpen } = props;
+function QuestionModal(props: IProps) {
+  const { handleCancel, isModalOpen, questions } = props;
 
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
   const [isFinished, setIsFinished] = useState(false);
@@ -82,4 +83,4 @@ function TestModal(props: IProps) {
   );
 }
 
-export default TestModal;
+export default QuestionModal;

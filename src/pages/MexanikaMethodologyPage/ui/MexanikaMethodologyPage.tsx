@@ -11,8 +11,9 @@ import {
 } from "@ant-design/icons";
 import { useResponsive } from "@/shared/lib/hooks/useResponsive";
 import { BtnToBack } from "@/shared/ui/BtnToBack";
-import TestModal from "./TestModal/TestModal";
 import { useCallback, useState } from "react";
+import { QuestionModal } from "@/shared/ui/QuestionModal";
+import { questionItems } from "../questionItems";
 
 const { Title } = Typography;
 
@@ -75,7 +76,11 @@ function MexanikaMethodologyPage() {
         </div>
       </Section>
 
-      <TestModal isModalOpen={testModal} handleCancel={onCloseTestModal} />
+      <QuestionModal
+        isModalOpen={testModal}
+        handleCancel={onCloseTestModal}
+        questions={questionItems}
+      />
     </>
   );
 }

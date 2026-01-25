@@ -1,10 +1,6 @@
-interface Question {
-  id: number;
-  question: string;
-  correctAnswer: boolean;
-}
+import type { IQuestion } from "@/shared/ui/QuestionModal";
 
-export const questions: Question[] = [
+export const questionItems: IQuestion[] = [
   {
     id: 1,
     question:
