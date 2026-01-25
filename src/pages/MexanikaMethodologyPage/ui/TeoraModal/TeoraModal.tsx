@@ -12,7 +12,7 @@ interface IProps {
 function TeoraModal({ isModalOpen, handleCancel }: IProps) {
   return (
     <Modal
-      title="Teoria"
+      title="Jihozlar"
       open={isModalOpen}
       onCancel={handleCancel}
       footer={false}
@@ -34,7 +34,7 @@ function TeoraModal({ isModalOpen, handleCancel }: IProps) {
         </div>
 
         <div>
-          <Text strong>Ihozlar:</Text>
+          <Text strong>Jihozlar:</Text>
           <Text>
             Shiftdan osilgan mustahkam ip, unga bog‘langan og‘ir yuk (masalan, 5
             kg li tosh yoki og'ir kofe choynagi) va yukning pastki qismiga
