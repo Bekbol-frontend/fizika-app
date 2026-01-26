@@ -150,7 +150,7 @@ function MatterModal({ isModalOpen, handleCancel }: IProps) {
         </ol>
 
         <Divider />
-        <Title>Nega bu qiziqarli?</Title>
+        <Title level={5}>Nega bu qiziqarli?</Title>
 
         <ul>
           <li>
