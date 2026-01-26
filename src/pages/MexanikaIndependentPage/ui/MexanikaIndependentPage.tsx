@@ -13,11 +13,13 @@ import {
 } from "@ant-design/icons";
 import NostandartModal from "./NostandartModal/NostandartModal";
 import { useCallback, useState } from "react";
+import ExpirementalModal from "./ExpirementalModal/ExpirementalModal";
 
 const { Title } = Typography;
 
 function MexanikaIndependentPage() {
   const [noStandartModal, setNoStandartModal] = useState(false);
+  const [expirementalModal, setExpirementalModal] = useState(false);
   const { sm } = useResponsive();
 
   const onShowNoStandarModal = useCallback(() => {
@@ -26,6 +28,14 @@ function MexanikaIndependentPage() {
 
   const onCloseNoStandarModal = useCallback(() => {
     setNoStandartModal(false);
+  }, []);
+
+  const onShowExpirementalModal = useCallback(() => {
+    setExpirementalModal(true);
+  }, []);
+
+  const onCloseExpirementalModal = useCallback(() => {
+    setExpirementalModal(false);
   }, []);
 
   return (
@@ -55,7 +65,11 @@ function MexanikaIndependentPage() {
                 <Col span={sm ? 12 : 24}>
                   <Card className={styles.card}>
                     <InfoCircleOutlined className={styles.icon} />
-                    <Button type="primary" className={styles.btn}>
+                    <Button
+                      type="primary"
+                      className={styles.btn}
+                      onClick={onShowExpirementalModal}
+                    >
                       Experimental masalalar
                     </Button>
                   </Card>
@@ -77,6 +91,10 @@ function MexanikaIndependentPage() {
       <NostandartModal
         isModalOpen={noStandartModal}
         handleCancel={onCloseNoStandarModal}
+      />
+      <ExpirementalModal
+        isModalOpen={expirementalModal}
+        handleCancel={onCloseExpirementalModal}
       />
     </>
   );
