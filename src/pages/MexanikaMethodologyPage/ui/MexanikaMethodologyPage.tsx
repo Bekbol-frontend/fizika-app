@@ -15,12 +15,16 @@ import { useCallback, useState } from "react";
 import { QuestionModal } from "@/shared/ui/QuestionModal";
 import { questionItems } from "../questionItems";
 import TeoraModal from "./TeoraModal/TeoraModal";
+import MatterModal from "./MatterModal/MatterModal";
 
 const { Title } = Typography;
 
 function MexanikaMethodologyPage() {
   const [testModal, setTestModal] = useState(false);
   const [teoraModal, setTeoraModal] = useState(false);
+  const [matterModal, setMatterModal] = useState(false);
+
+  const { sm } = useResponsive();
 
   const onShowTestModal = useCallback(() => {
     setTestModal(true);
@@ -38,7 +42,13 @@ function MexanikaMethodologyPage() {
     setTeoraModal(false);
   }, []);
 
-  const { sm } = useResponsive();
+  const onShowMatterModal = useCallback(() => {
+    setMatterModal(true);
+  }, []);
+
+  const onCloseMatterModal = useCallback(() => {
+    setMatterModal(false);
+  }, []);
 
   return (
     <>
@@ -79,7 +89,11 @@ function MexanikaMethodologyPage() {
                 <Col span={24}>
                   <Card className={styles.card}>
                     <EditOutlined className={styles.icon} />
-                    <Button type="primary" className={styles.btn}>
+                    <Button
+                      type="primary"
+                      className={styles.btn}
+                      onClick={onShowMatterModal}
+                    >
                       Masala echish
                     </Button>
                   </Card>
@@ -97,6 +111,10 @@ function MexanikaMethodologyPage() {
       />
 
       <TeoraModal isModalOpen={teoraModal} handleCancel={onCloseTeoraModal} />
+      <MatterModal
+        isModalOpen={matterModal}
+        handleCancel={onCloseMatterModal}
+      />
     </>
   );
 }
