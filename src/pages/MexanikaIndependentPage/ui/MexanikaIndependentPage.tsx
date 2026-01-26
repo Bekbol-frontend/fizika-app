@@ -14,12 +14,14 @@ import {
 import NostandartModal from "./NostandartModal/NostandartModal";
 import { useCallback, useState } from "react";
 import ExpirementalModal from "./ExpirementalModal/ExpirementalModal";
+import MaterModal from "./MaterModal/MaterModal";
 
 const { Title } = Typography;
 
 function MexanikaIndependentPage() {
   const [noStandartModal, setNoStandartModal] = useState(false);
   const [expirementalModal, setExpirementalModal] = useState(false);
+  const [materModal, setMaterModal] = useState(false);
   const { sm } = useResponsive();
 
   const onShowNoStandarModal = useCallback(() => {
@@ -36,6 +38,14 @@ function MexanikaIndependentPage() {
 
   const onCloseExpirementalModal = useCallback(() => {
     setExpirementalModal(false);
+  }, []);
+
+  const onShowMaterModal = useCallback(() => {
+    setMaterModal(true);
+  }, []);
+
+  const onCloseMaterModal = useCallback(() => {
+    setMaterModal(false);
   }, []);
 
   return (
@@ -77,7 +87,11 @@ function MexanikaIndependentPage() {
                 <Col span={24}>
                   <Card className={styles.card}>
                     <EditOutlined className={styles.icon} />
-                    <Button type="primary" className={styles.btn}>
+                    <Button
+                      type="primary"
+                      className={styles.btn}
+                      onClick={onShowMaterModal}
+                    >
                       Masala
                     </Button>
                   </Card>
@@ -96,6 +110,8 @@ function MexanikaIndependentPage() {
         isModalOpen={expirementalModal}
         handleCancel={onCloseExpirementalModal}
       />
+
+      <MaterModal isModalOpen={materModal} handleCancel={onCloseMaterModal} />
     </>
   );
 }
