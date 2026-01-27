@@ -1,0 +1,30 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .inner {
+    max-width: 1000px;
+    width: 100%;
+
+    .card {
+      & > div {
+        padding: var(--space-sm) !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-sm);
+
+        .btn {
+          width: 100%;
+        }
+
+        .icon {
+          font-size: var(--font-size-xl) !important;
+        }
+      }
+    }
+  }
+}

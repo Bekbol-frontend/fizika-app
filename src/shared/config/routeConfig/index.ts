@@ -3,4 +3,8 @@ export const appRoutes = {
   mexanika: "/mexanika",
   mexanikaMethodology: "/mexanika-methodology",
   mexanikaIndependent: "/mexanika-independent",
+
+  molecular: "/molecular",
+  molekularMethodology: "/molekular-methodology",
+  molekularIndependent: "/molekular-independent",
 } as const;

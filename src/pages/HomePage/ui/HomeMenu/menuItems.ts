@@ -7,7 +7,7 @@ export const menuItems = [
   },
   {
     name: "Malekulyar fizika",
-    page: appRoutes.mexanika,
+    page: appRoutes.molecular,
   },
   {
     name: "Elektr va magnetizm",
