@@ -13,11 +13,16 @@ import Img from "@/shared/assets/molekular/molekular.jpg";
 import { useCallback, useState } from "react";
 import { QuestionModal } from "@/shared/ui/QuestionModal";
 import { questionMolekularItems } from "../questionItems";
+import TeoraModal from "./TeoraModal/TeoraModal";
+import MatterModal from "./MatterModal/MatterModal";
 
 const { Title } = Typography;
 
 function MolekularMethodologyPage() {
   const [testModal, setTestModal] = useState(false);
+  const [teoraModal, setTeoraModal] = useState(false);
+  const [matterModal, setMatterModal] = useState(false);
+
   const { sm } = useResponsive();
 
   const onShowTestModal = useCallback(() => {
@@ -26,6 +31,22 @@ function MolekularMethodologyPage() {
 
   const onCloseTestModal = useCallback(() => {
     setTestModal(false);
+  }, []);
+
+  const onShowTeoraModal = useCallback(() => {
+    setTeoraModal(true);
+  }, []);
+
+  const onCloseTeoraModal = useCallback(() => {
+    setTeoraModal(false);
+  }, []);
+
+  const onShowMatterModal = useCallback(() => {
+    setMatterModal(true);
+  }, []);
+
+  const onCloseMatterModal = useCallback(() => {
+    setMatterModal(false);
   }, []);
 
   return (
@@ -55,7 +76,11 @@ function MolekularMethodologyPage() {
                 <Col span={sm ? 12 : 24}>
                   <Card className={styles.card}>
                     <InfoCircleOutlined className={styles.icon} />
-                    <Button type="primary" className={styles.btn}>
+                    <Button
+                      type="primary"
+                      className={styles.btn}
+                      onClick={onShowTeoraModal}
+                    >
                       Nazariy ma’lumot
                     </Button>
                   </Card>
@@ -63,7 +88,11 @@ function MolekularMethodologyPage() {
                 <Col span={24}>
                   <Card className={styles.card}>
                     <EditOutlined className={styles.icon} />
-                    <Button type="primary" className={styles.btn}>
+                    <Button
+                      type="primary"
+                      className={styles.btn}
+                      onClick={onShowMatterModal}
+                    >
                       Masala yechish
                     </Button>
                   </Card>
@@ -73,10 +102,17 @@ function MolekularMethodologyPage() {
           </Row>
         </div>
       </Section>
+
       <QuestionModal
         isModalOpen={testModal}
         handleCancel={onCloseTestModal}
         questions={questionMolekularItems}
+      />
+
+      <TeoraModal isModalOpen={teoraModal} handleCancel={onCloseTeoraModal} />
+      <MatterModal
+        isModalOpen={matterModal}
+        handleCancel={onCloseMatterModal}
       />
     </>
   );
