@@ -14,7 +14,7 @@ interface IProps {
 function MatterModal({ isModalOpen, handleCancel }: IProps) {
   return (
     <Modal
-      title="Masala echish"
+      title="Masala yechish"
       open={isModalOpen}
       onCancel={handleCancel}
       footer={false}

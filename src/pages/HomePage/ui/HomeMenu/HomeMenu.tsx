@@ -35,7 +35,7 @@ function HomeMenu() {
       </Col>
       <Col xs={24} sm={8}>
         <Button type="primary" className={styles.btn}>
-          Boglanish
+          Boğlanish
         </Button>
       </Col>
     </Row>

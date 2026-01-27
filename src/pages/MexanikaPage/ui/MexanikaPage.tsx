@@ -5,8 +5,8 @@ function MexanikaPage() {
   return (
     <CardBlock
       mainTitle="Mexanika"
-      titleOne="Masala echish metodikasi"
-      titleTwo="Mustaqil echish uchin masalalar"
+      titleOne="Masala yechish metodikasi"
+      titleTwo="Mustaqil yechish uchin masalalar"
       pageOne={appRoutes.mexanikaMethodology}
       pageTwo={appRoutes.mexanikaIndependent}
     />

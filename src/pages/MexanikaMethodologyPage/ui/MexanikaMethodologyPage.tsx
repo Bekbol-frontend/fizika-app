@@ -82,7 +82,7 @@ function MexanikaMethodologyPage() {
                       className={styles.btn}
                       onClick={onShowTeoraModal}
                     >
-                      Teoralik molumot
+                      Nazariy ma’lumot
                     </Button>
                   </Card>
                 </Col>
@@ -94,7 +94,7 @@ function MexanikaMethodologyPage() {
                       className={styles.btn}
                       onClick={onShowMatterModal}
                     >
-                      Masala echish
+                      Masala yechish
                     </Button>
                   </Card>
                 </Col>

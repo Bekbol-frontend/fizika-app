@@ -53,7 +53,7 @@ function MexanikaIndependentPage() {
       <Section className={styles.seciont}>
         <BtnToBack />
         <div className={styles.inner}>
-          <Title level={sm ? 1 : 3}>Mustaqil echish uchin masalalar</Title>
+          <Title level={sm ? 1 : 3}>Mustaqil echish uchun masalalar</Title>
           <Row gutter={[16, 16]}>
             <Col span={sm ? 12 : 24}>
               <ImgBlock imgUrl={Img} />
