@@ -55,7 +55,7 @@ function MexanikaMethodologyPage() {
       <Section className={styles.seciont}>
         <BtnToBack />
         <div className={styles.inner}>
-          <Title level={sm ? 1 : 3}>Masala echish metodikasi</Title>
+          <Title level={sm ? 1 : 3}>Masala yechish metodikasi</Title>
           <Row gutter={[16, 16]}>
             <Col span={sm ? 12 : 24}>
               <ImgBlock imgUrl={Img} />
