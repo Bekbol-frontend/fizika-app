@@ -1,0 +1,1 @@
+export { ElectricityMethodologyPageAsync } from "./ui/ElectricityMethodologyPage.async"

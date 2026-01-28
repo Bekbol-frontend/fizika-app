@@ -7,4 +7,8 @@ export const appRoutes = {
   molecular: "/molecular",
   molekularMethodology: "/molekular-methodology",
   molekularIndependent: "/molekular-independent",
+
+  electricityAndMagnetism: "/electricity-and-magnetism",
+  electricityAndMagnetismMethodology: "/electricity-and-magnetism-methodology",
+  electricityAndMagnetismIndependent: "/electricity-and-magnetism-independent",
 } as const;

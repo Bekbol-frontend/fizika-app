@@ -11,7 +11,7 @@ export const menuItems = [
   },
   {
     name: "Elektr va magnetizm",
-    page: appRoutes.mexanika,
+    page: appRoutes.electricityAndMagnetism,
   },
   {
     name: "Optika",

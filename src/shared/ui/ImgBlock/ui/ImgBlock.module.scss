@@ -4,6 +4,11 @@
   background-color: var(--base-white);
   border-radius: var(--rounded-xs);
   overflow: hidden;
+  height: 320px;
+
+  @media screen and (max-width: 768px) {
+    height: 250px;
+  }
 
   img {
     width: 100%;

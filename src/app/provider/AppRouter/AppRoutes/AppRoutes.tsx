@@ -8,6 +8,9 @@ import { MexanikaIndependentPageAsync } from "@/pages/MexanikaIndependentPage";
 import { MolecularPageAsync } from "@/pages/MolecularPage";
 import { MolekularMethodologyPageAsync } from "@/pages/MolekularMethodologyPage";
 import { MolekularIndependentPageAsync } from "@/pages/MolekularIndependentPage";
+import { ElectricityAndMagnetismPageAsync } from "@/pages/ElectricityAndMagnetismPage";
+import { ElectricityMethodologyPageAsync } from "@/pages/ElectricityMethodologyPage";
+import { ElectricityIndependentPageAsync } from "@/pages/ElectricityIndependentPage";
 
 function AppRoutes() {
   return (
@@ -31,6 +34,18 @@ function AppRoutes() {
         <Route
           path={appRoutes.molekularIndependent}
           element={<MolekularIndependentPageAsync />}
+        />
+        <Route
+          path={appRoutes.electricityAndMagnetism}
+          element={<ElectricityAndMagnetismPageAsync />}
+        />
+        <Route
+          path={appRoutes.electricityAndMagnetismMethodology}
+          element={<ElectricityMethodologyPageAsync />}
+        />
+        <Route
+          path={appRoutes.electricityAndMagnetismIndependent}
+          element={<ElectricityIndependentPageAsync />}
         />
       </Route>
     </Routes>
