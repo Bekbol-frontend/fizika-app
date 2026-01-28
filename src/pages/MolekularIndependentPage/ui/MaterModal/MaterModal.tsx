@@ -10,7 +10,7 @@ interface IProps {
 function MaterModal({ isModalOpen, handleCancel }: IProps) {
   return (
     <Modal
-      title="Nostandart masalalar"
+      title="Masala"
       open={isModalOpen}
       onCancel={handleCancel}
       footer={false}
