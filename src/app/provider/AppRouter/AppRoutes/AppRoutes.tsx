@@ -11,6 +11,9 @@ import { MolekularIndependentPageAsync } from "@/pages/MolekularIndependentPage"
 import { ElectricityAndMagnetismPageAsync } from "@/pages/ElectricityAndMagnetismPage";
 import { ElectricityMethodologyPageAsync } from "@/pages/ElectricityMethodologyPage";
 import { ElectricityIndependentPageAsync } from "@/pages/ElectricityIndependentPage";
+import { OptikaPageAsync } from "@/pages/OptikaPage";
+import { OptikaMethodologyPageAsync } from "@/pages/OptikaMethodologyPage";
+import { OptikaIndependentPageAsync } from "@/pages/OptikaIndependentPage";
 
 function AppRoutes() {
   return (
@@ -46,6 +49,15 @@ function AppRoutes() {
         <Route
           path={appRoutes.electricityAndMagnetismIndependent}
           element={<ElectricityIndependentPageAsync />}
+        />
+        <Route path={appRoutes.optika} element={<OptikaPageAsync />} />
+        <Route
+          path={appRoutes.optikaMethodology}
+          element={<OptikaMethodologyPageAsync />}
+        />
+        <Route
+          path={appRoutes.optikaIndependent}
+          element={<OptikaIndependentPageAsync />}
         />
       </Route>
     </Routes>

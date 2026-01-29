@@ -11,4 +11,8 @@ export const appRoutes = {
   electricityAndMagnetism: "/electricity-and-magnetism",
   electricityAndMagnetismMethodology: "/electricity-and-magnetism-methodology",
   electricityAndMagnetismIndependent: "/electricity-and-magnetism-independent",
+
+  optika: "/optika",
+  optikaMethodology: "/optika-methodology",
+  optikaIndependent: "/optika-independent",
 } as const;

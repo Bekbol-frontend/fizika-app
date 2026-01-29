@@ -15,7 +15,7 @@ export const menuItems = [
   },
   {
     name: "Optika",
-    page: appRoutes.mexanika,
+    page: appRoutes.optika,
   },
   {
     name: "Atom va yadro fizikasi",
