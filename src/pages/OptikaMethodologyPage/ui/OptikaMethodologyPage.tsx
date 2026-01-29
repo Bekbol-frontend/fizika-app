@@ -2,7 +2,7 @@ import { Section } from "@/shared/ui/Section";
 import { Button, Card, Col, Row, Typography } from "antd";
 import styles from "./OptikaMethodologyPage.module.scss";
 
-import Img from "@/shared/assets/mexanika/maxresdefault.jpg";
+import Img from "@/shared/assets/optika/cold-atoms-quantum-optics-simplified-tunable.jpg";
 import ImgBlock from "@/shared/ui/ImgBlock/ui/ImgBlock";
 import {
   EditOutlined,
