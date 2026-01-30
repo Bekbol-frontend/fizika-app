@@ -1,0 +1,1 @@
+export { AtomMethodologyPageAsync } from "./ui/AtomMethodologyPage.async"

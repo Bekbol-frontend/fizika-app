@@ -14,6 +14,8 @@ import { ElectricityIndependentPageAsync } from "@/pages/ElectricityIndependentP
 import { OptikaPageAsync } from "@/pages/OptikaPage";
 import { OptikaMethodologyPageAsync } from "@/pages/OptikaMethodologyPage";
 import { OptikaIndependentPageAsync } from "@/pages/OptikaIndependentPage";
+import { AtomPageAsync } from "@/pages/AtomPage";
+import { AtomMethodologyPageAsync } from "@/pages/AtomMethodologyPage";
 
 function AppRoutes() {
   return (
@@ -58,6 +60,12 @@ function AppRoutes() {
         <Route
           path={appRoutes.optikaIndependent}
           element={<OptikaIndependentPageAsync />}
+        />
+
+        <Route path={appRoutes.atomAndNucleus} element={<AtomPageAsync />} />
+        <Route
+          path={appRoutes.atomAndNucleusMethodology}
+          element={<AtomMethodologyPageAsync />}
         />
       </Route>
     </Routes>

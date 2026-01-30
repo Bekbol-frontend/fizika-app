@@ -15,4 +15,8 @@ export const appRoutes = {
   optika: "/optika",
   optikaMethodology: "/optika-methodology",
   optikaIndependent: "/optika-independent",
+
+  atomAndNucleus: "/atom-and-nucleus",
+  atomAndNucleusMethodology: "/atom-and-nucleus-methodology",
+  atomAndNucleusIndependent: "/atom-and-nucleus-independent",
 } as const;

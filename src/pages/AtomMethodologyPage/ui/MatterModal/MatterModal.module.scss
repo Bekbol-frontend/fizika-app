@@ -1,0 +1,19 @@
+.content {
+  .imgBlock {
+    margin-block: var(--space-sm);
+    display: flex;
+    padding-left: var(--space-md);
+
+    img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: var(--rounded-xs);
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: var(--space-md);
+  }
+}

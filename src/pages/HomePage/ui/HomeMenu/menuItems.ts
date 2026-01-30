@@ -19,6 +19,6 @@ export const menuItems = [
   },
   {
     name: "Atom va yadro fizikasi",
-    page: appRoutes.mexanika,
+    page: appRoutes.atomAndNucleus,
   },
 ];
