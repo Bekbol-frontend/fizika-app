@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  position: relative;
+
+  .content {
+    max-width: 1200px;
+    width: 100%;
+
+    .title {
+      text-align: center;
+    }
+
+    .colImg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

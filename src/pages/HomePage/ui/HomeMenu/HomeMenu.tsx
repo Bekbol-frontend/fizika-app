@@ -3,6 +3,7 @@ import styles from "./HomeMenu.module.scss";
 import { menuItems } from "./menuItems";
 import { useNavigate } from "react-router-dom";
 import { useCallback } from "react";
+import { appRoutes } from "@/shared/config/routeConfig";
 
 function HomeMenu() {
   const navigate = useNavigate();
@@ -29,7 +30,11 @@ function HomeMenu() {
       ))}
 
       <Col xs={24} sm={8}>
-        <Button type="primary" className={styles.btn}>
+        <Button
+          type="primary"
+          className={styles.btn}
+          onClick={() => navigate(appRoutes.aboutAuthor)}
+        >
           Muallif haqida
         </Button>
       </Col>

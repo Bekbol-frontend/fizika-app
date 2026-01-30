@@ -19,4 +19,6 @@ export const appRoutes = {
   atomAndNucleus: "/atom-and-nucleus",
   atomAndNucleusMethodology: "/atom-and-nucleus-methodology",
   atomAndNucleusIndependent: "/atom-and-nucleus-independent",
+
+  aboutAuthor: "/about-author",
 } as const;

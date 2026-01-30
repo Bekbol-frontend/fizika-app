@@ -17,6 +17,7 @@ import { OptikaIndependentPageAsync } from "@/pages/OptikaIndependentPage";
 import { AtomPageAsync } from "@/pages/AtomPage";
 import { AtomMethodologyPageAsync } from "@/pages/AtomMethodologyPage";
 import { AtomIndependentPageAsync } from "@/pages/AtomIndependentPage";
+import { AboutAuthorAsync } from "@/pages/AboutAuthor";
 
 function AppRoutes() {
   return (
@@ -72,6 +73,7 @@ function AppRoutes() {
           path={appRoutes.atomAndNucleusIndependent}
           element={<AtomIndependentPageAsync />}
         />
+        <Route path={appRoutes.aboutAuthor} element={<AboutAuthorAsync />} />
       </Route>
     </Routes>
   );
