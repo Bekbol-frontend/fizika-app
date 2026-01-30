@@ -8,7 +8,7 @@ function AtomPage() {
       titleOne="Masala yechish metodikasi"
       titleTwo="Mustaqil yechish uchin masalalar"
       pageOne={appRoutes.atomAndNucleusMethodology}
-      pageTwo={appRoutes.optikaIndependent}
+      pageTwo={appRoutes.atomAndNucleusIndependent}
     />
   );
 }
