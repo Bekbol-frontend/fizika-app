@@ -18,6 +18,7 @@ import { AtomPageAsync } from "@/pages/AtomPage";
 import { AtomMethodologyPageAsync } from "@/pages/AtomMethodologyPage";
 import { AtomIndependentPageAsync } from "@/pages/AtomIndependentPage";
 import { AboutAuthorAsync } from "@/pages/AboutAuthor";
+import { ConnectionPageAsync } from "@/pages/ConnectionPage";
 
 function AppRoutes() {
   return (
@@ -74,6 +75,7 @@ function AppRoutes() {
           element={<AtomIndependentPageAsync />}
         />
         <Route path={appRoutes.aboutAuthor} element={<AboutAuthorAsync />} />
+        <Route path={appRoutes.connection} element={<ConnectionPageAsync />} />
       </Route>
     </Routes>
   );

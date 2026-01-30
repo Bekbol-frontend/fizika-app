@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  position: relative;
+
+  .content {
+    max-width: 1200px;
+    width: 100%;
+
+    .title {
+      text-align: center;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      li {
+        padding: var(--space-sm);
+        border: 1px solid #ddd;
+        border-radius: var(--rounded-xs);
+        h5 {
+          display: flex !important;
+          align-items: center;
+          gap: 10px;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}

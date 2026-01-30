@@ -39,7 +39,11 @@ function HomeMenu() {
         </Button>
       </Col>
       <Col xs={24} sm={8}>
-        <Button type="primary" className={styles.btn}>
+        <Button
+          type="primary"
+          className={styles.btn}
+          onClick={() => navigate(appRoutes.connection)}
+        >
           Boğlanish
         </Button>
       </Col>

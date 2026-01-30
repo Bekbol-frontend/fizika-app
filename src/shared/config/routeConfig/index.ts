@@ -21,4 +21,5 @@ export const appRoutes = {
   atomAndNucleusIndependent: "/atom-and-nucleus-independent",
 
   aboutAuthor: "/about-author",
+  connection: "/connection",
 } as const;
