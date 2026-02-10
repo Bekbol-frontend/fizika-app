@@ -1,8 +1,9 @@
 import { Section } from "@/shared/ui/Section";
 import styles from "./AboutAuthor.module.scss";
-import { Card, Col, Row, Typography } from "antd";
+import { Card, Col, Divider, Row, Typography } from "antd";
 import { useResponsive } from "@/shared/lib/hooks/useResponsive";
-import AuthorImage from "@/shared/assets/about/34.png";
+import AuthorImageNurjan from "@/shared/assets/about/nurjan.jpg";
+import AuthorImageMexri from "@/shared/assets/about/mexri.jpg";
 import { BtnToBack } from "@/shared/ui/BtnToBack";
 
 const { Title, Paragraph } = Typography;
@@ -22,26 +23,67 @@ function AboutAuthor() {
           <Row gutter={[20, 20]}>
             <Col span={sm ? 6 : 24} className={styles.colImg}>
               <Card>
-                <img src={AuthorImage} alt="author" className={styles.img} />
+                <img
+                  src={AuthorImageNurjan}
+                  alt="author"
+                  className={styles.img}
+                />
               </Card>
             </Col>
             <Col span={sm ? 18 : 24}>
               <Card>
                 <Title level={sm ? 3 : 5}>
-                  Orınbetov Nurılla Turdımuratovich
+                  Matjanov Nurjan Sultamuratovich
                 </Title>
                 <Paragraph>
-                  1975 yil 9-sentyabrda Qoraqalpog'iston Respublikasi Taxta
-                  -ko'pir tumanida tug'ilgan. Hozirgi vaqtda Nukus davlat
-                  pedagogika instituti “Texnologik ta'lim” kafedrasining
-                  dotsenti. Qoraqalpog'iston Respublikasi “Xalq ta'limi
-                  a'lochisi” ko'krak nishonini muallifi.
+                  1974-yil 21-martda Qoraqalpog'iston Respublikasi Nukus
+                  shahrida tug'ilgan. Hozirgi vaqtda Nukus davlat pedagogika
+                  instituti “Fizika o’qitish metodikasi” kafedrasining
+                  professori. 2022-yili 7-dekabrda Toshkent davlapedagogika
+                  universiteti huzuridagi ilmiy darajalar beruvchi
+                  DSc.03⁄03.01.2020.Ped.26.01 raqamli ilmiy kengashda
+                  «Pedagogika oliy tálim tizimida óqitilayotgan kvant
+                  nazariyasining metodologik va didaktik asoslari» mavzusida
+                  13.00.02-Tálim va tarbiya metodikasi (fizika) ixtisosligi
+                  bóyicha dissertatsiya ishini muvaffaqiyatli himoya qilgan va
+                  2023-yil 31-yanvar kungi OAK ning 332⁄1-sonli bayonnomasi
+                  bilan tasdiqlangan. Pedagogika fanlari doktori (DSc) ilmiy
+                  darajasini olgan.
                 </Paragraph>
+              </Card>
+            </Col>
+          </Row>
+          <Divider />
+          <Row gutter={[20, 20]}>
+            <Col span={sm ? 6 : 24} className={styles.colImg}>
+              <Card>
+                <img
+                  src={AuthorImageMexri}
+                  alt="author"
+                  className={styles.img}
+                />
+              </Card>
+            </Col>
+            <Col span={sm ? 18 : 24}>
+              <Card>
+                <Title level={sm ? 3 : 5}>
+                  Bekmuratova Mexrijamal Yelubaevna
+                </Title>
                 <Paragraph>
-                  N. Orınbetov tomonidan 70 dan ochiq ilmiy ishlar e'lon
-                  qilingan bo'lib, ulardan 3 darslik, 1 ta o'quv qo'llanma, 1 ta
-                  elektron darslik, 1 monografiya, 6 ta uslubiy qo'llanma va
-                  ilmiy maqola, tezislari chop etilgan.
+                  1998-yil 29-mayda Qoraqalpog'iston Respublikasi Nukus shahrida
+                  tug'ilgan. Hozirgi vaqtda Nukus davlat pedagogika instituti
+                  130002- Ta’lim-tarbiya nazariyasi va metodikasi (fizika)
+                  ixtisosligining 3-bosqich doktoranti. 2005-2014 yillarda
+                  24-sonli umum ta’lim maktabini a’lo darajali shaxodatnomaga
+                  tamomlagan. 2014-2017 yillarda kasb-hunar kolledjini a’lo
+                  darajali diolom bilan tamomlagan. 2017-2021 yillarda Nukus
+                  davlat pedagogika institutini tamomlab 2021-2023 yillarda
+                  Berdax nomidagi Qoraqolpaǵiston Milliy Universiteti
+                  magistratura bosqichini a’lo baholar bilan tamomlagan.
+                  M.Bekmuratova tomonidan 20 dan oshiq ilmiy ishlar e'lon
+                  qilingan bo'lib, ulardan darslik, 1ta o'quv metodik qo'llanma,
+                  3ta chet el maqola , ilmiy maqolalar va tezislari chop
+                  etilgan.
                 </Paragraph>
               </Card>
             </Col>
