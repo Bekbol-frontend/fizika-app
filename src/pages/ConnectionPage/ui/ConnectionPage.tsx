@@ -29,7 +29,7 @@ function ConnectionPage() {
                 </li>
                 <li>
                   <Title level={5}>
-                    <PhoneOutlined /> +99893 614 39 89
+                    <PhoneOutlined /> +998(91) 303-23-03
                   </Title>
                 </li>
               </ul>
