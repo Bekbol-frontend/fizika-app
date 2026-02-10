@@ -36,7 +36,7 @@ function ConnectionPage() {
             </Col>
             <Col span={sm ? 12 : 24}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.074786984384!2d59.61677447687524!3d42.468698071183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dd9a44421fd7c7%3A0x803802377eeb8fab!2z0J3Rg9C60YPRgdGB0LrQuNC5INCz0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDQv9C10LTQsNCz0L7Qs9C40YfQtdGB0LrQuNC5INC40L3RgdGC0LjRgtGD0YI!5e0!3m2!1sru!2s!4v1769795940670!5m2!1sru!2s"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11771.594502026881!2d59.5732783!3d42.4724447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dd9bd314d3be83%3A0xf74ee7438f61b30f!2zMjYgLSDQnNC40LrRgNC-LdGA0LDQudC-0L0sINCd0YPQutGD0YEsINCg0LXRgdC_0YPQsdC70LjQutCwINCa0LDRgNCw0LrQsNC70L_QsNC60YHRgtCw0L0sINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1770742393753!5m2!1sru!2s"
                 width="100%"
                 height="400px"
                 style={{
