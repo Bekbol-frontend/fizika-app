@@ -3,7 +3,7 @@ import styles from "./ConnectionPage.module.scss";
 import { Card, Col, Row, Typography } from "antd";
 import { useResponsive } from "@/shared/lib/hooks/useResponsive";
 import { BtnToBack } from "@/shared/ui/BtnToBack";
-import { MessageOutlined, PhoneOutlined } from "@ant-design/icons";
+import { PhoneOutlined } from "@ant-design/icons";
 
 const { Title } = Typography;
 
@@ -22,11 +22,6 @@ function ConnectionPage() {
           <Row gutter={[20, 20]}>
             <Col span={sm ? 12 : 24} className={styles.colImg}>
               <ul>
-                <li>
-                  <Title level={5}>
-                    <MessageOutlined /> nirilla75@bk.ru
-                  </Title>
-                </li>
                 <li>
                   <Title level={5}>
                     <PhoneOutlined /> +998(91) 303-23-03
