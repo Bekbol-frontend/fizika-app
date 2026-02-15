@@ -76,7 +76,7 @@ function AboutAuthor() {
                   ixtisosligining 3-bosqich doktoranti. 2005-2014 yillarda
                   24-sonli umum ta’lim maktabini a’lo darajali shaxodatnomaga
                   tamomlagan. 2014-2017 yillarda kasb-hunar kolledjini a’lo
-                  darajali dipolom bilan tamomlagan. 2017-2021 yillarda Nukus
+                  darajali diplom bilan tamomlagan. 2017-2021 yillarda Nukus
                   davlat pedagogika institutini tamomlab 2021-2023 yillarda
                   Berdaq nomidagi Qoraqolpaǵiston Milliy Universiteti
                   magistratura bosqichini a’lo baholar bilan tamomlagan.
